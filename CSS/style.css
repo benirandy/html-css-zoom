@@ -5,68 +5,106 @@
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    top: 0;
-    left: 0;
-    background-color: darkgrey;
-}
-
-.container {
-    max-width: 1170px;
-    margin: auto;
-    display: flex;
-}
-
-
-header nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    background-color: black;
     height: 50px;
-    width: 100px;
+    padding: 10px;
+    text-align: right;
 }
 
-header nav ul {
-    display: flex;
-    list-style: armenian;
-}
-
-header a {
-    color: white;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    background-color: darkgrey;
-    color: white;
-    align-items: center;
-}
-
-.debug .pulsanti-left,
-.debug .pulsanti-center,
-.debug .pulsanti-right {
-    height: 50px;
-    width: 100px;
-    background-color: red;
-}
 
 main {
+    background-color: black;
+    height: calc(100vh - 120px);
+    overflow-y: 80px;
+    padding-top: 50px;
+
+}
+
+header button {
+    background-color: gray;
+    padding: 5px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    margin-left: 10px;
+}
+
+.partecipant {
+    position: relative;
+    margin: 5px;
+
+    width: 235px;
+}
+
+.partecipant img {
+    display: block;
+    width: 100%;
+}
+
+.partecipant .name {
+    position: absolute;
+    opacity: 2;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+footer {
+    background-color: rgb(29, 28, 28);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon .big-icon {
+    font-size: 35px;
+    text-size-adjust: 3;
+}
+
+.footer-middle {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right {
     background-color: grey;
-    height: 80%;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
 }
 
-main .utenti {
-    padding-right: 10px;
-    ;
+.footer-right span {
+    color: red;
+
 }
 
-.utente {
-    padding-left: 10px;
-    top: 40px;
-    height: 300px;
+.green-button {
+    color: green;
 }
